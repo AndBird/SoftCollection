@@ -1,4 +1,5 @@
-Notepad++ Json Viewer插件 <\br>
+#Notepad++ Json Viewer插件 
+<\br>
 安装： <\br>
 Notpad++ -> 插件(Plugins) -> Plugin Manager -> Show Plugin Manager -> Avaliable -> 选择Json View -> 安装(install) 
 <\br>使用： <\br>
