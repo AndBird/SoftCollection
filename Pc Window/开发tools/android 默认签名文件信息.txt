@@ -1,0 +1,51 @@
+1.默认debug.keystore的路径
+C:\Users\Administrator\.android\debug.keystore
+
+2.查找前面文件的信息
+输入命令:keytool -v -list -keystore C:\Users\Administrator\.android\debug.keystore
+输入密码:android
+
+输出内容：
+密钥库类型: jks
+密钥库提供方: SUN
+
+您的密钥库包含 1 个条目
+
+别名: androiddebugkey
+创建日期: 2018-6-6
+条目类型: PrivateKeyEntry
+证书链长度: 1
+证书[1]:
+所有者: CN=Android Debug, O=Android, C=US
+发布者: CN=Android Debug, O=Android, C=US
+序列号: 457df179
+有效期为 Wed Jun 06 16:07:27 CST 2018 至 Fri May 29 16:07:27 CST 2048
+证书指纹:
+         MD5:  03:19:1A:CA:C5:4B:AA:55:D0:09:38:02:BE:A3:5B:F8
+         SHA1: CF:C8:27:75:06:91:FA:D3:21:DF:70:4F:5A:7B:93:EA:77:EC:2E:97
+         SHA256: 62:FE:66:92:8B:AF:A3:DB:E8:3C:10:EE:6F:24:4F:51:C2:9C:E4:64:9E:A2:2C:CC:A8:9C:AD:61:83:19:21:61
+签名算法名称: SHA256withRSA
+主体公共密钥算法: 2048 位 RSA 密钥
+版本: 3
+
+扩展:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 15 A9 1D AE D3 38 84 3A   44 13 65 40 D0 3E D0 D1  .....8.:D.e@.>..
+0010: 9C 4B 8D E6                                        .K..
+]
+]
+
+
+
+*******************************************
+*******************************************
+
+
+
+Warning:
+JKS 密钥库使用专用格式。建议使用 "keytool -importkeystore -srckeystore C:\Users\Administrator\.android\debug.keystore -destkeystore C:\Users\Administrator\.android\debug.keystore -deststoretype pkcs12" 迁移到行业标准
+格式 PKCS12。
+

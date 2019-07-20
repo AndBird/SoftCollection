@@ -1,0 +1,20 @@
+打jar包：
+(1)菜单File->Project stucture
+(2)在弹窗左侧选中Artifacts->"+",选jar，选择from modules with dependencies，然后会有配置窗口出现，配置完成后，勾选Build on make >ok保存
+
+配置:
+1.打.class包(不带注释)
+(1)Output Layout -> 点击+，选中 Directory content
+(2)在弹窗中选择out/production/工程名/包目录
+2.打源码包(可见源码与注释)
+(1)先执行1打.class(因为没有这一步，不知道为什么打的jar看不见类文件),Output Layout -> 点击+，选中 Directory content
+(2)在弹窗中选择/工程名/src/包目录
+
+最后:菜单Build ->Build Artifacts即可生成jar包，目录在Output directory中指定的目录。
+
+
+
+网上的做法:
+如果打非源码jar，可用下面的方法(jar包可能会将out中的apk文件一起打入):
+1、ctrl+shift+alt+s 弹出项目设置窗口，点击Artifacts页签，点+号，选择jar Empty。修改jar name，将右侧需要打包进去的资源拖到左侧，记住Output directory 路径。保存配置。这样就创建了一个新的Artifact。
+2、回到IDEA，菜单Build > Build Artifacts.. 选择刚才创建的Artifact，点ok 生成了。Output directory目录查看你的jar文件吧。
